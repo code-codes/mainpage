@@ -5,7 +5,7 @@ function Login(){
   const [details,setDetails]=useState({email:"",password:""});
   const submitHandler=e=>{
     e.preventDefault();
-  
+  console.log(details);
   }
 
     return (
@@ -16,11 +16,11 @@ function Login(){
 			<form  action="" class="login" onSubmit={submitHandler}>
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input type="email" class="login__input" placeholder="User name / Email" onChange={e=>setDetails({...details,email:e.target.value}) }  value={details.email}></input>
+					<input type="email" class="login__input" placeholder="User name / Email" name='email' onChange={e=>setDetails({...details,email:e.target.value}) }  value={details.email}></input>
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password"  onChange={e=>setDetails({...details,password:e.target.value}) }  value={details.password}></input>
+					<input type="password" class="login__input" placeholder="Password" name='password'  onChange={e=>setDetails({...details,password:e.target.value}) }  value={details.password}></input>
 				</div>
 				<button class="button login__submit">
 					<span class="button__text">Log In Now</span>

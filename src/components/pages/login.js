@@ -1,7 +1,14 @@
 import React,{useState} from 'react';
 import './login.css';
+import {AiFillEyeInvisible,AiFillEye} from 'react-icons/ai';
 
 function Login(){
+
+	const [passwordEye,setPasswordEye]=useState(false);
+
+	const handlepasswordclick=()=>{
+		setPasswordEye(!passwordEye)
+	}
   const [details,setDetails]=useState({email:"",password:""});
   const submitHandler=e=>{
     e.preventDefault();
@@ -20,7 +27,12 @@ function Login(){
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password" name='password'  onChange={e=>setDetails({...details,password:e.target.value}) }  value={details.password}></input>
+					<input type={(passwordEye===false)?'password':'text'} class="login__input" placeholder="Password" name='password'  onChange={e=>setDetails({...details,password:e.target.value}) }  value={details.password}></input>
+				</div>
+				<div >
+				{
+					(passwordEye===false)?<AiFillEyeInvisible onClick={handlepasswordclick}></AiFillEyeInvisible>:<AiFillEye onClick={handlepasswordclick}></AiFillEye>
+				}
 				</div>
 				<button class="button login__submit">
 					<span class="button__text">Log In Now</span>

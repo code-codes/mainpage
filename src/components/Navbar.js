@@ -83,6 +83,13 @@ function Navbar() {
             >
               Sign Up
             </Link>
+            <Link
+              to='/log-in'
+              className='nav-links-mobile'
+              onClick={closeMobileMenu}
+            >
+              Log In
+            </Link>
           </li>
         </ul>
         <Button />

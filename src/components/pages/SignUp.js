@@ -1,8 +1,19 @@
 import React,{useState} from 'react';
 import './login.css';
-
+import {AiFillEyeInvisible,AiFillEye} from 'react-icons/ai';
 
 export default function SignUp() {
+	const [passwordEye,setPasswordEye]=useState(false);
+
+	const handlepasswordclick=()=>{
+		setPasswordEye(!passwordEye)
+	}
+	const [confirmpasswordEye,setconfirmPasswordEye]=useState(false);
+
+	const handleconfirmpasswordclick=()=>{
+		setconfirmPasswordEye(!confirmpasswordEye)
+	}
+
 	const [details,setDetails]=useState({name:"",email:"",password:"",confirmpass:""});
 	const submitHandler=e=>{
 	  e.preventDefault();
@@ -24,12 +35,24 @@ export default function SignUp() {
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password" name='password' onChange={e=>setDetails({...details,password:e.target.value}) }  value={details.password}></input>
+					<input type={(passwordEye===false)?'password':'text'} class="login__input" placeholder="Password"  name='password' onChange={e=>setDetails({...details,password:e.target.value}) }  value={details.password}></input>
+				</div>
+				<div >
+				{
+					(passwordEye===false)?<AiFillEyeInvisible onClick={handlepasswordclick}></AiFillEyeInvisible>:<AiFillEye onClick={handlepasswordclick}></AiFillEye>
+				}
+				
 				</div>
         <div class="login__field">
 
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Confirm Password" name='confirmpass' onChange={e=>setDetails({...details,confirmpass:e.target.value}) }  value={details.confirmpass}></input>
+					<input type={(passwordEye===false)?'password':'text'} class="login__input" placeholder="Confirm Password" name='confirmpass' onChange={e=>setDetails({...details,confirmpass:e.target.value}) }  value={details.confirmpass}></input>
+				</div>
+				<div >
+				{
+					(confirmpasswordEye===false)?<AiFillEyeInvisible onClick={handleconfirmpasswordclick}></AiFillEyeInvisible>:<AiFillEye onClick={handleconfirmpasswordclick}></AiFillEye>
+				}
+				
 				</div>
      
 				<button class="button login__submit" >

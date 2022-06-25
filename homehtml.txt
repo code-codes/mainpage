@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Quote-->
+<section class="quote">
+  <video autoplay muted loop id="myVideo">
+  <source src="https://aicgusec.org/wp-content/uploads/2022/03/DJI_0004_5.mp4" type="video/mp4">
+</video>
+  <div class="content">
+  <h1>EVERY MOMENT IS A FRESH BEGINNING </h1>
+  <h1>BE THE GAME CHANGER</h1>
+    </div>
+ </section>
+
+<!--About-->
+<section  class="about-section">
+ <div class="about">
+   <div>
+   <h1> About AIC GUSEC</h1>
+   <p> Promoted by Gujarat’s oldest and the largest University, Gujarat University and established under the aegis of Atal Innovation Mission (NITI Aayog, Government of India), AIC GUSEC is an agent of transformation and empowerment by identifying and supporting startup ideas with impact. It offers a collaborative, no-cost incubation program to for-profit social enterprises and works extensively with public governance bodies, international developmental organisations, non-profit organisations, impact investors and other civil-society stakeholders.</p>
+   </div>
+    <img class="project-image" src="https://aicgusec.org/wp-content/uploads/2022/04/CERI-ARTWORK-e1650268064113.jpg" alt="project" />
+    </div>
+  </section>
+
+<!-- Startups-->
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header">Meet some budding startups from AIC GUSEC</h2>
+
+  <div class="projects-grid">
+    <a href="" target="_blank" class="project project-tile">
+      <img class="project-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi31PvG1ikBSTe0oXzvlZW8tlnVD4nC3LPOw&usqp=CAU" alt="project" />
+      <p class="project-title">
+        Start1 Name
+      </p>
+    </a>
+  
+    <a href="" target="_blank" class="project project-tile">
+      <img class="project-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi31PvG1ikBSTe0oXzvlZW8tlnVD4nC3LPOw&usqp=CAU" alt="project" />
+      <p class="project-title">
+        Start2 Name
+      </p>
+    </a>
+    <a href="" target="_blank" class="project project-tile">
+      <img class="project-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi31PvG1ikBSTe0oXzvlZW8tlnVD4nC3LPOw&usqp=CAU" alt="project" />
+      <p class="project-title">
+                Start3 Name
+      </p>
+    </a>
+    <p>Add description here</p>
+    <p>Add description here</p>
+    <p>Add description here</p>
+     </div>
+  </section>
+
+
+<!--Footer-->
+<footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Contact Info</h4>
+  	 			<ul>
+            <li><p class ="contact">C/O GUSEC West Wing, Near Department of Botany,
+              University School of Sciences, Gujarat University,
+              Ahmedabad 380009 Gujarat INDIA</p></li>
+            <li><a href=" +91 79 26308576">+91 79 26308576</a> </li>
+            <li><a href="contact@aicgusec.org">contact@aicgusec.org</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		
+  	 		
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/aicgusec" class="fa fa-facebook"></a>
+  	 				<a href="https://twitter.com/aicgusec" class="fa fa-twitter"></a>
+  	 				<a href="https://www.instagram.com/aic.gusec/" class="fa fa-instagram"></a>
+  	 			<a href="https://www.linkedin.com/company/aicgusec" class="fa fa-linkedin"></a>
+            <a href="https://wa.me/message/PMXM4XVZ5CSBE1" class="fa fa-whatsapp"></a>
+            <a href="https://www.youtube.com/channel/UC2eh5L0r7lTkC8skClW8MYA" class="fa fa-youtube"></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
